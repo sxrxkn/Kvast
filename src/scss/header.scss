@@ -1,0 +1,54 @@
+@import "mixins";
+@import "variables";
+
+
+.header {
+    height: 650px;
+    width: 100%;
+    background: url(/img/background.jpg) no-repeat 50% 50%;
+
+    &__container {
+        @include bar-container;
+    }
+
+    &__links {
+        @include links;
+    }
+
+    &__promo {
+        color: $white;
+        margin: 0 auto;
+        padding-top: 150px;
+        width: $page-width;
+        height: 500px;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 72px;
+    }
+}
+
+.links {
+    &__nav {
+        @include nav;
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 650px;
+            background-color: $grey;
+            top: 50px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 0.5px;
+            width: 650px;
+            background-color: $grey;
+            bottom: 50px;
+        }
+    }
+}

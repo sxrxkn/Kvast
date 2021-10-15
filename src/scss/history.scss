@@ -1,0 +1,51 @@
+@import "variables";
+
+.history {
+    width: 100%;
+    height: 680px;
+
+    &__h1 {
+        width: 900px;
+        margin: 0 auto;
+    }
+}
+.container {
+
+    &__flex-first-el {
+        width: 900px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__flex-sec-el {
+        display: flex;
+        justify-content: end;
+        
+
+    }
+
+    &__first-col {
+        padding-bottom: 30px;
+
+        & p {
+            display: block;
+            width: 490px;
+            padding-right: 100px;
+        }
+        
+    }
+
+    &__second-col {
+        
+        padding-bottom: 30px;
+        
+
+        & a {
+            color: $bold-brown;
+        }
+
+        & img {
+            padding-left: 115px;
+        }
+    }
+}

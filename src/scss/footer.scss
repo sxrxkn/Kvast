@@ -1,0 +1,68 @@
+@import "variables";
+@import "mixins";
+
+.footer {
+    width: 100%;
+    height: 300px;
+    color: #7d7d7d;
+    background-color: $black;
+
+    &__container {
+        @include bar-container;
+        margin-bottom: 40px;
+    }
+
+    &__links {
+        @include links;
+
+        &__nav {
+            @include nav;
+        }
+    }
+
+    &__bottom-bar {
+        display: flex;
+        margin: 0 auto;
+        width: 1030px;
+
+        &__social-network {
+            display: flex;
+            margin: auto 0;
+            padding-left: 20px;
+        }
+    
+        &__copyright {
+            width: 200px;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 14px;
+            padding: 0 200px 0 90px;
+        }
+    
+        &__html-academy-logo {
+            position: relative;
+            margin-right: 25px;
+            width: 75px;
+            height: 68px;
+            line-height: 68px;
+            background: #1b1b1b;
+            margin: auto 0;
+
+            & img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    
+        &__layout-author {
+            font-size: 12px;
+            margin: auto 0;
+            padding-left: 25px;
+        }
+    }
+}
+

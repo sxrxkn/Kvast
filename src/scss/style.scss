@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 @import "header";
 @import "showcase";
 @import "promo";
@@ -8,7 +11,47 @@
 @import "footer";
 
 
-*{
+* {
     margin: 0;
     padding: 0;
+    border: 0;
 }
+
+nav, footer, header, section {
+	display: block;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 100px 0 60px 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+button {
+	cursor: pointer;
+	background-color: inherit;
+	color: white;
+	font-size: 15px;
+    font-weight: 700;
+	text-transform: uppercase;
+}
+
+ul li {
+	list-style: none;
+}
+
+body {
+	min-width: 1200px;
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #000000;
+	background-color: white;
+}
+

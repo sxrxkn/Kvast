@@ -1,0 +1,35 @@
+@mixin bar-container {
+    width: $page-width;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin nav {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin links {
+    width: 100%;
+    height: auto;
+}
+
+@mixin white-button {
+    color: $bold-brown;
+    width: 142px;
+    height: 42px;
+    font-size: 14px;
+    border: 2px solid $bold-brown;
+}
+
+@mixin brown-button {
+    color: $white;
+    background-color: $bold-brown;
+    width: 106px;
+    height: 46px;
+    font-size: 14px;
+}
